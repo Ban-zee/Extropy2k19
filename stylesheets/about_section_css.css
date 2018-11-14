@@ -1,0 +1,50 @@
+#about_back_pic{
+    width: 100%;
+    height: 100vh;
+}
+.About_heading{
+    font-family: Gravedigger;
+    font-size: 3vw;
+    align-self: center;
+    color: yellowgreen;
+    z-index: 1;
+    position: relative;
+}
+.About_content{
+    font-family: Gravedigger;
+    font-size: 1vw;
+    padding: 0.5vw;
+    color:blueviolet;
+    z-index: 1;
+    position: relative;
+}
+.About_section{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+body{
+    background-color: black;
+}
+.About_section{
+    background-color: black;
+}
+@media screen and (max-width: 1000px) {
+    .About_content{
+        font-size: 1.5vw;
+    }
+    .About_heading{
+        margin-left: 0;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .About_content{
+        font-size: 2.8vw;
+    }
+    .About_heading{
+        margin-left: 0;
+        font-size: 6vw;
+    }
+}
