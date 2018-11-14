@@ -1,6 +1,6 @@
 @font-face{
-    font-family: Gravedigger
-    src: url("/fonts/Gravedigger.otf");
+    font-family: Gravedigger;
+    src: url("/fonts/Gravedigger.otf") format('otf');
 }
 .About_heading{
     font-family: Gravedigger;
