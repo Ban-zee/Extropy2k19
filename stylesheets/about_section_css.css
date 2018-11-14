@@ -1,6 +1,6 @@
-#about_back_pic{
-    width: 100%;
-    height: 100vh;
+@font-face{
+    font-family: Gravedigger
+    src: url("/fonts/Gravedigger.otf");
 }
 .About_heading{
     font-family: Gravedigger;
