@@ -1,0 +1,52 @@
+Index: stylesheets/events_css.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- stylesheets/events_css.css	(date 1545651347000)
++++ stylesheets/events_css.css	(date 1545651347000)
+@@ -1,28 +1,29 @@
+ #container {
+    position: relative;
+    width: 100%;
++    height: 100%;
+    padding-bottom: 100%;
+-    background-color: #6200ee;
++    background-color: #252120;
+ }
+ 
+ #circle,#circle-0,#circle-4,#bkg-circle{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+-   background-color: #000000;
++   background-color: steelblue;
+    border-radius: 50%;
+-    top: 50%;
++    top:40%;
+     left: 50%;
+-    transform: translate(-50%,-50%);
++    transform: translate(-50%,-40%);
+ }
+ #circle-0{
+-    background-color: bisque;
++    background-color: #91C7A9;
+ }
+ #circle-4{
+-    background-color: chartreuse;
++    background-color: #848379;
+ }
+ #bkg-circle{
+-    background: transparent;
++    background: orangered;
+ }
+ #small-circle{
+   margin-top: 25%;
+@@ -31,6 +32,6 @@
+   position: absolute;
+   width: 60%;
+   height: 60%;
+-  background-color: #e5e5e5;
++  background-color: #a92f41;
+   border-radius: 50%;
+ }
