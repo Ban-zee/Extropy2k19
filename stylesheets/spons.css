@@ -45,7 +45,7 @@
 body{
 	padding: 0;
 	margin: 0;
-	background: url("bkg3.png");
+	background: black;
 	background-position: 0% 15%;
 	background-size: contain;
 	background-repeat: repeat;
@@ -187,8 +187,20 @@ svg.intro.go .text-stroke:nth-child(4) {
   -webkit-animation-delay: 0.3s;
           animation-delay: 0.3s;
 }
-
-
+.Return{
+	left:46vw;
+	position: absolute;
+	font-family: 'GD';
+	top:25%;
+}
+@media screen and (max-width: 600px) {
+	.Return{
+		left:30vw;
+		padding: 5%;
+		top:10%;
+		font-size: 4vw;
+	}
+}
 
 
 
