@@ -1,0 +1,137 @@
+body{
+	margin:0;
+	padding: 0;
+	background:black;
+}
+@font-face{
+	font-family: Gd;
+	src:url("Gravedigger.otf");
+}
+@font-face{
+	font-family: Br;
+	src:url("Bariol.otf");
+}
+@keyframes dash {
+  /*25%{ stroke-dashoffset:1500 ;
+  }
+  50%{ stroke-dashoffset: 1000;
+  }
+  75%{ stroke-dashoffset: 100;
+  }*/
+  100% {
+    stroke-dashoffset: 0;
+ }}
+ 
+nav{
+	position: absolute;
+	z-index: 1001;
+	right: 0;
+	width:100vw;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	/*align-items:center;*/
+	/*height: auto;*/
+	font-family: Gd;
+	letter-spacing: 2px;
+	font-size: 1vw;
+	padding: 0;
+	margin-top: 4vh;
+
+}
+nav #menu{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+nav a{
+	flex-basis: 1;
+	padding: 0;
+	/*width: auto;*/
+	/*margin-left: 10%;*/
+	color: #fff;
+}
+nav #highl{
+	color: #fff;
+	font-size: 10%;
+}
+#title{
+	position: absolute;
+	margin-top: 7vh;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;}
+#Ext{
+	color: #fff;
+
+
+
+	font-weight: bold;
+	font-family: 'Gd';
+	font-size: 3vw;
+	letter-spacing: 10px;
+	margin-right: 3%;
+	/*flex-basis: 1;*/
+
+}
+#dates{
+	color: #fff;
+	font-weight: bold;
+	font-family: 'Br';
+	font-size: 2vw;
+	letter-spacing: 10px;
+	margin-right: 3%;
+    opacity: 0;
+    transition: 4s ;
+
+}
+#bkg{
+	width: 100%;
+	height: 100%;
+    position:absolute;
+    padding: 0;
+    background:black;
+    /*display: none;*/
+}
+#svg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin:0;
+}
+#main{
+	transition: 1s ease-in-out;
+}
+.st0{
+	stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: dash 5s linear forwards;
+}
+.big{
+	stroke-dasharray: 10000;
+    stroke-dashoffset: 10000;
+    animation: dash 10s linear forwards;
+}
+@media only screen and  (max-width: 500px) and (orientation: portrait) {
+/*body{transform-origin: 0% 0%;
+	transform: rotate(-90deg);}*/
+#svg{transform: rotate(-90deg)scale(1.6)translateX(0px)translateY(0px) ;
+}
+#title{
+	transform: rotate(-90deg);
+}
+h1{margin-left: 25%;
+	margin-top: 7%;
+   padding: 0}
+#dates{margin-left: 25%;
+	margin-top: 5%;
+   padding: 0
+
+}
+/*#bkg{transform: rotate(-90deg);}*/
+}

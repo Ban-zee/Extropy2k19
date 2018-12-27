@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/about_section_css.css">
-    <title>Title</title>
+    <title>About-Us</title>
 </head>
 <body>
-<div class="About_section">
+<div class="About_section" id="box">
       <div class = "About_heading">
         <p class = 'Heading'>
             About Us
@@ -27,6 +27,16 @@
         </p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
 
     </div>
+    <div><a class="Return" href="index.html">Return</a></div>
 </div>
 </body>
+<script type="text/javascript">
+    function onld(event) {
+     var box = document.getElementById("box");
+     box.classList.add("boxld");
+     // alert("loded")
+ }
+window.onload = onld();
+
+</script>
 </html>

@@ -4,7 +4,7 @@ body{
   font-family: 'Lato Sans', sans-serif;
 }
 
-p{
+a{
   position: relative;
   top: 40%;
   font-size:5vw;
@@ -41,7 +41,7 @@ p{
 .checkpoint{
   position: absolute;
   width: 10vw;
-  height: 8vh;
+  height: 5vh;
   background: #282828;
   font-family: Gravedigger;
   color: #E50914;

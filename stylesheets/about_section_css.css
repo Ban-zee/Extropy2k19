@@ -1,15 +1,45 @@
+@font-face{
+    font-family: br;
+    src: url('Bariol.otf');
+}
+@-webkit-keyframes land {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.95);
+	}
+	100%{
+		transform: scale(1);
+	}
+ 
+}
 
+@keyframes land {
+  0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.95);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+.boxld{
+	animation:land 0.5s ease ;
+}
 .About_heading{
     font-family: Gravedigger;
     font-size: 3vw;
-    align-self: center;
+    margin-left: 35%;
     color: yellowgreen;
     z-index: 1;
     position: relative;
 }
 .About_content{
-    font-family: Gravedigger;
-    font-size: 1vw;
+    font-family: br;
+    font-size: 1.5vw;
     padding: 0.5vw;
     color:blueviolet;
     z-index: 1;
@@ -26,22 +56,40 @@ body{
 .About_section{
     background-color: black;
 }
+.Return{
+    font-family: Gravedigger;
+    font-size: 2vw;
+    margin-left: 40%;
+    color: yellowgreen;
+    z-index: 1;
+    position: absolute;
+    margin-top: 2%;
+}
 @media screen and (max-width: 1000px) {
     .About_content{
-        font-size: 1.5vw;
+        font-size: 2.5vw;
     }
     .About_heading{
         margin-left: 0;
         font-size: 4vw;
     }
+    .Return{
+        font-size: 3.5vw;
+        margin-top: 2%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .About_content{
-        font-size: 2.8vw;
+        font-size: 3.5vw;
     }
     .About_heading{
-        margin-left: 0;
+        left:20%;
         font-size: 6vw;
+    }
+        .Return{
+        font-size: 5vw;
+        left:-10%;
+        padding-top: 1%;
     }
 }
