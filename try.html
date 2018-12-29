@@ -1,119 +1,101 @@
-window.onload =  function init(){
-	setTimeout(function(){
-	document.getElementById("loadercont").style.display ="none";
-	document.getElementById("landingcont").style.display="block";
-    },2000);
-	i=0;
-	start=-1;
- 	setInterval(function(){
- 		Ele = document.getElementById("landingmain");
-		clr=["#f41b07","#87f707","#06dbd7","#fff"];
-		Ele.style.stroke = clr[i%4];
-		document.getElementsByClassName("text")[0].style.color = clr[i%4];
-		document.getElementsByClassName("text")[1].style.color = clr[i%4];
-		document.getElementsByClassName("text")[2].style.color = clr[i%4];
-		document.getElementsByClassName("text")[3].style.color = clr[i%4];
-		document.getElementsByClassName("text")[4].style.color = clr[i%4];
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="./try.css">
+</head>
+<body>
+<div id="timer">
+		<div class='wrapper'>
+  <div class='time-part-wrapper'>
+    <div class='time-part days tens'>
+      <div class='digit-wrapper'>
+        <span class='digit' id="11">0</span>
+      </div>
+    </div>
+    <div class='time-part days ones'>
+      <div class='digit-wrapper'>
+        <span class='digit' id="12">0</span>
+      </div>
+    </div>
+    <p class="text">Days</p>
+  </div>
+  <div class='time-part-wrapper'>
+    <div class='time-part hours tens'>
+      <div class='digit-wrapper'>
+        <span class='digit' id="21">0</span>
+      </div>
+    </div>
+    <div class='time-part hours ones'>
+      <div class='digit-wrapper'>
+        <span class='digit' id="22">0</span>
+      </div>
+    </div>
+    <p class="text">Hours</p>
+  </div>
+  <div class='time-part-wrapper'>
+    <div class='time-part minutes tens'>
+      <div class='digit-wrapper'>
+        <span class='digit' id="31">0</span>
+      </div>
+    </div>
+    <div class='time-part minutes ones'>
+      <div id="32" class='digit-wrapper'>
+        <span class='digit'>0</span>
+        <span class='digit'>9</span>
+        <span class='digit'>8</span>
+        <span class='digit'>7</span>
+        <span class='digit'>6</span>
+        <span class='digit'>5</span>
+        <span class='digit'>4</span>
+        <span class='digit'>3</span>
+        <span class='digit'>2</span>
+        <span class='digit'>1</span>
+        <span class='digit'>0</span>
+      </div>
+    </div>
+    <p class="text">Minutes</p>
+  </div>
+  <div class='time-part-wrapper'>
+    <div class='time-part seconds tens'>
+      <div id="41" class='digit-wrapper'>
+        <span class='digit'>0</span>
+        <span class='digit'>5</span>
+        <span class='digit'>4</span>
+        <span class='digit'>3</span>
+        <span class='digit'>2</span>
+        <span class='digit'>1</span>
+        <span class='digit'>0</span>
+      </div>
+    </div>
+    <div class='time-part seconds ones'>
+      <div id="42" class='digit-wrapper'>
+        <span class='digit'>0</span>
+        <span class='digit'>9</span>
+        <span class='digit'>8</span>
+        <span class='digit'>7</span>
+        <span class='digit'>6</span>
+        <span class='digit'>5</span>
+        <span class='digit'>4</span>
+        <span class='digit'>3</span>
+        <span class='digit'>2</span>
+        <span class='digit'>1</span>
+        <span class='digit'>0</span>
+      </div>
+    </div>
+    <p class="text">Seconds</p>
+  </div>
+</div>
 
-	
-		i+=1;
-	},2000);
- shuffletter(start,"EXTROPY'19","Ext");
- setTimeout(function(){document.getElementById("dates").style.opacity=1},1500);
- timer();
-}
-
-/*Letter animation*/
-function shuffle(start,text,id){
-	var fps = 25;
-	    step = 10;
-	    txt=text;
-	    types=[];
-	    letters=[];
-        ele = document.getElementById(id);
-        srt = start;
-// console.log(srt);
-	    for(var i=0;i<txt.length;i++){
-
-            var ch = txt[i];
-
-            if(ch == " "){
-                types[i] = "space";
-                continue;
-            }
-            else if(/[a-z]/.test(ch)){
-                types[i] = "lowerLetter";
-            }
-            else if(/[A-Z]/.test(ch)){
-                types[i] = "upperLetter";
-            }
-            else {
-                types[i] = "number";
-            }
-
-            letters.push(i);
-            // console.log(types);
-        }
-  		function randomChar(type){
-        	var pool = "";
-
-    		if (type == "lowerLetter"){
-       			 pool = "abcdefghijklmnopqrstuvwxyz0123456789";
-   			}
-    		else if (type == "upperLetter"){
-       			 pool = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    		}
-   			else if (type == "number"){
-     			 pool = "0123456789";
-   			}
-
-   			 var arr = pool.split('');
-    	         k = arr[Math.floor(Math.random()*arr.length)];
-    	         // console.log(k);
-    	    return k ;
-		}
-    var i;
-        len = letters.length;
-        // console.log(len);
-    var strCopy = txt.split('');
-        // console.log(strCopy); // Fresh copy of the string
-            // All the work gets done here
-    if(srt > len*len){
-                return;
-            } 
-    for(i=Math.max(srt,0); i < len; i++){
-                // the characters we will be working on at once
-         if( i < srt+step){
-                    l  = randomChar(types[letters[i]]);
-                    // console.log(strCopy[letters[i]]);
-                    strCopy[letters[i]] = l;
-                }
-
-    else {
-           strCopy[letters[i]] = "";
-             }
-        }
-        // console.log(strCopy.join(""));
-    ele.innerHTML = strCopy.join("") ;
-
-      };        
-
-function shuffletter(start,text,id){
-console.log(start);
-         setInterval(function(){ setTimeout(function(){
-         shuffle(start+1,text,id);
-         start+=1;
-         },1000/50);},1000/7)
-     }
-
-      
+	</div>
+<script type="text/javascript">
 
 function timer(){
    const second = 1000;
          minute = second * 60;
          hour = minute * 60;
          day = hour * 24;
-   let countDown = new Date('Feb 01, 2019 10:00:00').getTime();
+   let countDown = new Date('Feb 01, 2019 10:42:00').getTime();
    console.log(countDown);
                // x = setInterval(function() {
    let now = new Date().getTime();
@@ -171,7 +153,7 @@ function timer(){
    	                 },1000 *(s));
     } 
     setInterval(function(){
-          let countDown = new Date('Feb 01, 2019 10:00:00').getTime();
+          let countDown = new Date('Feb 01, 2019 10:42:00').getTime();
     	  let now = new Date().getTime(),
           distance = countDown - now;
           // min = Math.floor((distance % (hour)) / (minute*10));
@@ -182,4 +164,8 @@ function timer(){
     document.getElementById('21').innerText = Math.floor((distance % day) / (hour*10));
     document.getElementById('12').innerText = Math.floor((distance / day)%10);
     document.getElementById('11').innerText = Math.floor((distance / (10*day)));
-    },2000) 
+    },2000);}
+ document.onload = timer();    
+</script>
+</body>
+</html>

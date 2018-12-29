@@ -1,0 +1,194 @@
+@font-face{
+	font-family:'GD';
+	src:url("./Gravedigger.otf");
+}
+@font-face{
+	font-family:'Bariol';
+	src:url("./Bariol.otf");
+}
+@-webkit-keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes land {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.95);
+	}
+	100%{
+		transform: scale(1);
+	}
+ 
+}
+
+@keyframes land {
+  0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(0.95);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	background: url("./bkg3.png");
+	background-position: 0% 15%;
+	background-size: contain;
+	background-repeat: repeat;
+
+}
+#box{
+	border:10px solid #fff;
+	height: auto;
+}
+.boxld{
+	animation:land 0.5s ease ;
+}
+
+#title{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+	padding: 0;
+	margin: 0;
+	height: 15vh;
+	width: 100%;
+}
+
+#ptitle{
+	font-size: 2rem;
+	font-family: "GD";
+	font-weight: bold;
+	flex-basis: 1;
+	color: #37efd7;
+	margin-top: 5px;
+	margin-bottom: 0;
+	letter-spacing: 2px;
+}
+
+#container{
+	margin: 3%;
+	padding: 2%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-content: space-between;
+	height: 100%;
+	flex-wrap:wrap;
+/*	background:blue;
+*/}
+#spons{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0;
+	border: 5px solid #37efd7;
+	border-radius:10%; 
+	height:300px;
+	width: 250px;
+	overflow: hidden;
+	margin-top: 7vh;
+}
+#spons:hover {box-shadow: -15px 15px 50px -20px #37efd7;
+}
+
+.spimg{
+	background:#fff;
+	background-position: 50% 50%;
+	height: 300px;
+	width: 250px;
+	background-size: contain;
+	background-repeat:no-repeat;
+}
+
+#spons1{
+	background-image: url("./delta.png");
+}
+#spons2{
+	background-image: url("./nandan.png");
+}
+#spons3{
+	background-image: url("./conpro.png");
+}
+#spname{
+	font-size: 1.2rem;
+	font-family: bariol;
+	letter-spacing: 1.75px;
+	/*font-family: "GD";*/
+	font-weight: bolder;
+	color: #fff;
+	margin: 0;
+	padding: 7px;
+	text-align: center;
+	background-color:#504d51;
+}
+svg.intro {
+  max-width: 80%;
+  position: absolute;
+ 
+}
+svg.intro .text {
+ font-family: GD, sans-serif;
+  letter-spacing: 0.2px;
+  font-size: 3.25px;
+  display: block; }
+
+svg.intro.go .text {
+  font-family: GD, sans-serif;
+  letter-spacing: 0.2px;
+  font-size: 3.25px;
+  display: block;
+
+}
+svg.intro.go .text-stroke {
+  fill:#fff;
+  stroke:none;
+  stroke-width: 0.5px;
+  stroke-dashoffset: -100;
+  stroke-dasharray: 100;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  animation: dash 0.7s ease forwards;
+}
+svg.intro.go .text-stroke:nth-child(2) {
+  -webkit-animation-delay: .10s;
+          animation-delay: .10s;
+}
+/*svg.intro.go .text-stroke:nth-child() {
+  -webkit-animation-delay: .9s;
+          animation-delay: .9s;
+}*/
+svg.intro.go .text-stroke-2 {
+  stroke: #37efd7;
+  stroke-width: 0.5px;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+svg.intro.go .text-stroke:nth-child(3) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+svg.intro.go .text-stroke:nth-child(4) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+
+
+
+

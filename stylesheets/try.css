@@ -1,0 +1,194 @@
+/* Play with speed and easing of the animation */
+/* =========================================== */
+
+/*.time-part-wrapper:not(:last-child):after {
+  content: ":";
+  display: block;
+  width: 30px;
+  height: 230px;
+  position: absolute;
+  top: 0px;
+  right: -30px;
+  color: rgba(0, 0, 0, 0.25);
+  font-size: 200px;
+  line-height: 0.9;
+}*/
+@font-face{
+  font-family: Gd;
+  src:url("./Gravedigger.otf");
+}
+@font-face{
+  font-family: Br;
+  src:url("./Bariol.otf");
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  width: 15vw;
+  height: 80vh;
+  position: absolute;
+  right: 0vw;
+  top:10vh;
+  /*background-color: red;*/
+}
+.digit {
+  display: block;
+  font-size:4vw;
+  color: #fff;
+  height: 180px;
+  line-height: 1;
+  font-family: 'Br';
+  transition: 1s linear ;
+  /*opacity: 0.4;*/
+
+}
+
+.time-part-wrapper {
+  display: block;
+  margin:auto auto;
+  position: relative;
+  /*background-color: yellow;*/
+}
+
+
+.time-part {
+  position: relative;
+  width: 30%;
+  text-align: center;
+  height: 4vw;
+  overflow: hidden;
+  display: inline-block;
+  margin:0 0;
+  /*box-sizing: border-box;*/
+  border:3px solid #fff;
+  /*background: blue;*/
+}
+.text{
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  font-family: 'Gd';
+  font-size: 1.5vw;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  transition: 1s linear;
+  opacity: 0.4;
+}
+
+#togo{
+  font-size: 2vw;
+}
+.time-part .digit-wrapper {
+  animation-timing-function: cubic-bezier(1, 0, 1, 0);
+  transition-duration: 0.5s;
+  transition-timing-function:cubic-bezier(1,0.2,0,1.1);
+  
+}
+
+.time-part.minutes.ones .digit-wrapper {
+  animation-name: minutes-ones;
+  animation-duration: 600s;
+  transition-duration: 2s;
+  animation-iteration-count: 6;
+}
+.time-part.seconds.tens .digit-wrapper {
+  animation-name: seconds-tens;
+  transition-duration: 2s;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+.time-part.seconds.ones .digit-wrapper {
+  animation-name: seconds-ones;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes minutes-ones {
+  0% {
+    transform: translateY(-180px);
+  }
+  10% {
+    transform: translateY(-360px);
+  }
+  20% {
+    transform: translateY(-540px);
+  }
+  30% {
+    transform: translateY(-720px);
+  }
+  40% {
+    transform: translateY(-900px);
+  }
+  50% {
+    transform: translateY(-1080px);
+  }
+  60% {
+    transform: translateY(-1260px);
+  }
+  70% {
+    transform: translateY(-1440px);
+  }
+  80% {
+    transform: translateY(-1620px);
+  }
+  90% {
+    transform: translateY(-1800px);
+  }
+}
+@keyframes seconds-tens {
+  0% {
+    transform: translateY(-180px);
+  }
+  16.66667% {
+    transform: translateY(-360px);
+  }
+  33.33333% {
+    transform: translateY(-540px);
+  }
+  50% {
+    transform: translateY(-720px);
+  }
+  66.66667% {
+    transform: translateY(-900px);
+  }
+  83.33333% {
+    transform: translateY(-1080px);
+  }
+}
+@keyframes seconds-ones {
+  0% {
+    transform: translateY(-180px);
+  }
+  10% {
+    transform: translateY(-360px);
+  }
+  20% {
+    transform: translateY(-540px);
+  }
+  30% {
+    transform: translateY(-720px);
+  }
+  40% {
+    transform: translateY(-900px);
+  }
+  50% {
+    transform: translateY(-1080px);
+  }
+  60% {
+    transform: translateY(-1260px);
+  }
+  70% {
+    transform: translateY(-1440px);
+  }
+  80% {
+    transform: translateY(-1620px);
+  }
+  90% {
+    transform: translateY(-1800px);
+  }
+}
