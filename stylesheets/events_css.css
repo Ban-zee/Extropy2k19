@@ -1,9 +1,11 @@
 body{
   background-color: whitesmoke;
   margin: 0;
-  font-family: 'Lato Sans', sans-serif;
 }
-
+@font-face{
+  font-family: Gravedigger;
+  src:url('Gravedigger.otf')
+}
 a{
   position: relative;
   top: 40%;

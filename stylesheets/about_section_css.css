@@ -2,6 +2,10 @@
     font-family: br;
     src: url('Bariol.otf');
 }
+@font-face{
+    font-family: Gravedigger;
+    src:url('Gravedigger.otf')
+  }
 @-webkit-keyframes land {
 	0%{
 		transform: scale(1);
