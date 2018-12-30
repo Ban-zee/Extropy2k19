@@ -6,11 +6,11 @@ body{
 }
 @font-face{
 	font-family: Gd;
-	src:url("./Gravedigger.otf");
+	src:url("fonts/Gravedigger.otf");
 }
 @font-face{
 	font-family: Br;
-	src:url("./Bariol.otf");
+	src:url("fonts/Bariol.otf");
 }
 @keyframes dash {
   /*25%{ stroke-dashoffset:1500 ;

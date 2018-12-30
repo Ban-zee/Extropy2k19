@@ -1,10 +1,10 @@
 @font-face{
 	font-family:'GD';
-	src:url("./Gravedigger.otf");
+	src:url("fonts/Gravedigger.otf");
 }
 @font-face{
 	font-family:'Bariol';
-	src:url("./Bariol.otf");
+	src:url("fonts/Bariol.otf");
 }
 @-webkit-keyframes dash {
   100% {
@@ -117,13 +117,13 @@ body{
 }
 
 #spons1{
-	background-image: url("Delta.png");
+	background-image: url("pictures/Delta.png");
 }
 #spons2{
-	background-image: url("nandan.png");
+	background-image: url("pictures/nandan.png");
 }
 #spons3{
-	background-image: url("conpro.png");
+	background-image: url("pictures/conpro.png");
 }
 #spname{
 	font-size: 1.2rem;

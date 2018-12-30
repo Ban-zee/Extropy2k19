@@ -1,10 +1,10 @@
 @font-face{
     font-family: br;
-    src: url('Bariol.otf');
+    src: url('fonts/Bariol.otf');
 }
 @font-face{
     font-family: Gravedigger;
-    src:url('Gravedigger.otf')
+    src:url('fonts/Gravedigger.otf')
   }
 @-webkit-keyframes land {
 	0%{
@@ -36,7 +36,7 @@
 .About_heading{
     font-family: Gravedigger;
     font-size: 3vw;
-    margin-left: 35%;
+    margin-left: 37%;
     color: yellowgreen;
     z-index: 1;
     position: relative;
@@ -62,8 +62,8 @@ body{
 }
 .Return{
     font-family: Gravedigger;
-    font-size: 2vw;
-    margin-left: 40%;
+    font-size: 1.5vw;
+    margin-left: 43%;
     color: yellowgreen;
     z-index: 1;
     position: absolute;
@@ -88,12 +88,12 @@ body{
         font-size: 3.5vw;
     }
     .About_heading{
-        left:20%;
-        font-size: 6vw;
+        left:33%;
+        font-size: 4vw;
     }
         .Return{
-        font-size: 5vw;
-        left:-10%;
+        font-size: 3vw;
+        left:-5%;
         padding-top: 1%;
     }
 }

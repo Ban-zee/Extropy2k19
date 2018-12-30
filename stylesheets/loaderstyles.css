@@ -110,11 +110,11 @@ h2{
 }
 @font-face{
 	font-family: Br;
-	src:url("./Bariol.otf");
+	src:url("fonts/Bariol.otf");
 }
 @font-face{
 	font-family: Gd;
-	src:url("./Gravedigger.otf");
+	src:url("fonts/Gravedigger.otf");
 }
 
 @keyframes blink {
