@@ -1,8 +1,8 @@
 window.onload =  function init(){
-	setTimeout(function(){
+	
 	document.getElementById("loadercont").style.display ="none";
 	document.getElementById("landingcont").style.display="block";
-    },2000);
+  
 	i=0;
 	start=-1;
  	setInterval(function(){
@@ -21,6 +21,10 @@ window.onload =  function init(){
  shuffletter(start,"EXTROPY'19","Ext");
  setTimeout(function(){document.getElementById("dates").style.opacity=1},1500);
  timer();
+ window.addEventListener("orientationchange", function() {
+        console.log(screen.orientation);
+        location.reload(true);
+}, false);
 }
 
 /*Letter animation*/
@@ -171,9 +175,13 @@ function timer(){
    	                 },1000 *(s));
     } 
     setInterval(function(){
-          let countDown = new Date('Feb 01, 2019 10:00:00').getTime();
-    	  let now = new Date().getTime(),
-          distance = countDown - now;
+       const second = 1000;
+         minute = second * 60;
+         hour = minute * 60;
+         day = hour * 24;
+       let countDown = new Date('Feb 01, 2019 10:00:00').getTime();
+    	 let now = new Date().getTime(),
+           distance = countDown - now;
           // min = Math.floor((distance % (hour)) / (minute*10));
           
           // console.log(min);
@@ -182,4 +190,12 @@ function timer(){
     document.getElementById('21').innerText = Math.floor((distance % day) / (hour*10));
     document.getElementById('12').innerText = Math.floor((distance / day)%10);
     document.getElementById('11').innerText = Math.floor((distance / (10*day)));
-    },2000) 
+    },2000) ;
+
+ function active(){
+var element = document.getElementsByClassName("text")[0];
+    style = window.getComputedStyle(element),
+    color = style.getPropertyValue('color');
+  console.log(color);
+  document.getElementById(event.target.id).style.color = color;
+ }

@@ -3,6 +3,9 @@ body{
     margin: 0;
     padding: 0;}
 
+ #loadercont{display: block;} 
+#landingcont{display:none;}
+
 .loader{position: absolute;
 	left: 35%;
 	top: 35%;
@@ -21,6 +24,7 @@ svg{
 #gear{
 	transition: 1s cubic-bezier(0.43,0.39,0.23,0.62);
 	transform-origin: 50.2% 49.8%;
+
     position: fixed;
     z-index: 1000;}
 
@@ -76,7 +80,7 @@ h2{
 	/*z-index: 5000;*/
 	color: #fff;
 	font-family: Br;
-	font-size: 1.5vw;
+	font-size: 2vw;
 	letter-spacing: 2px;
 	/*top:75vh;*/
 	/*left:30vw;*/
