@@ -3,6 +3,10 @@ body{
 	padding: 0;
 	background:black;
 	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	scroll-behavior: 
+
 }
 @font-face{
 	font-family: Gd;
@@ -22,8 +26,8 @@ body{
   100% {
     stroke-dashoffset: 0;
  }}
-#loadercont{display: block;} 
-#landingcont{display:none;}
+/*#loadercont{display: block;} 
+#landingcont{display:none;}*/
 nav{
 	position: absolute;
 	z-index: 1101;
@@ -65,7 +69,7 @@ nav #highl{
 #timer{
   margin: 0 auto;
   width: 15vw;
-  height: 80vh;
+  height: 70vh;
   position: absolute;
   right: 0vw;
   top:15vh;
@@ -80,8 +84,9 @@ nav #highl{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
     align-items: center;}
 #Ext{
 	color: #fff;
@@ -111,6 +116,7 @@ nav #highl{
     padding: 0;
     background:black;
     z-index: 1099;
+    overflow: hidden;
     /*display: none;*/
 }
 #landsvg{
@@ -132,13 +138,27 @@ nav #highl{
     stroke-dashoffset: 10000;
     animation: dash 7s ease-out forwards;
 }
+#landingcont{
+height: 100vh;
+width: 100vw;
+overflow: hidden;
+}
 @media only screen and  (max-width: 600px) and (orientation: portrait) {
 /*body{transform-origin: 0% 0%;
 	transform: rotate(-90deg);}*/
+body{
+		overflow-x: hidden;
+	}
 #landsvg{transform: rotate(-90deg)scale(1.6)translateX(0px)translateY(0px) ;}
 
 #nav{
-	display:flex;
+	transform: rotate(-90deg);
+	/*background-color: blue;*/
+	top:50vh;
+	left: -70vw;
+	margin: 0;
+	width: 90vh;
+	font-size: 2vw;
 }
 #titleland{
 	transform: rotate(-90deg);
@@ -152,12 +172,15 @@ h1{margin-left: 25%;
 
 }
 #timer{
-		transform: scale(0.9) ;
+	    height: 40vh;
+		transform: scale(0.9) rotate(-90deg) ;
 		position: absolute;
-		right: 0vw;
-		/*background: blue;*/
+		left: 7vw;
+		top:-13vh;
+		/*background: red;*/
 		
  
 }
+
 /*#bkg{transform: rotate(-90deg);}*/
 }

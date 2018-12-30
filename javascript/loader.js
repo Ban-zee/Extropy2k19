@@ -2,15 +2,18 @@ function gear(){
 		gear = document.getElementById('gear');
 		r=50;
 		k=0;
-		setInterval(function(){k=k+1;
+		setInterval(function(){z=k+1;
 			
-			    gear.style.transform = "rotate(" + r*k + "deg)";
+			    gear.style.transform = "rotate(" + r*z + "deg)";
+          k=z;
 		   },200);
-		fun();
-		setInterval( function(){document.getElementById('bt').click();},11000);
+		
+		
     // blink();
 	}
 gear();
+fun();
+setInterval( function(){document.getElementById('bt').click();},11000);
   // function blink(){
   //  document.getElementById("loading"). 
   // }
@@ -26,7 +29,7 @@ gear();
      // i=0;
      var clr = ["#1eab9b","#dbbc0f","#6d0409"];
      var ringclr = ["#025178", "#2F4858","#C1C1C1"]
-     console.log(clr[0])
+     // console.log(clr[0])
      // setInterval(function(){ 
      	           // i=i+1;
                  //   i=i%3;
@@ -40,14 +43,14 @@ gear();
                             ring1.setAttribute('fill',clr[1]);
                             ring2.setAttribute('fill',ringclr[1]);                          
                             bubup2.style.opacity=0;
-                        console.log(filler.getAttribute("fill"))},3000);
+                        },3000);
     
                  setTimeout(function(){bubup3.style.transform = "translate(85px,-500px)";
                             filler.setAttribute('fill',clr[2]);
                             ring1.setAttribute('fill',clr[2]);
                             ring2.setAttribute('fill',ringclr[2]);
                             bubup3.style.opacity=0;
-                        console.log(filler.getAttribute("fill"))},6000);
+                        },6000);
 
                  setTimeout(function(){bubup1.style.display="none";
 
@@ -66,6 +69,6 @@ gear();
                            filler.setAttribute('fill',clr[0]);
                            ring1.setAttribute('fill',clr[0]);
                            ring2.setAttribute('fill',ringclr[0]);
-                           console.log(filler.getAttribute("fill"))},9000)
+                           },9000)
  }
      
