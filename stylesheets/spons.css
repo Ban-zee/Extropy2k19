@@ -49,6 +49,7 @@ body{
 	background-position: 0% 15%;
 	background-size: contain;
 	background-repeat: repeat;
+	background-image: url("bkg3.png");
 
 }
 #box{
@@ -102,7 +103,7 @@ body{
 	height:300px;
 	width: 250px;
 	overflow: hidden;
-	margin-top: 7vh;
+	margin-top: 2vh;
 }
 #spons:hover {box-shadow: -15px 15px 50px -20px #37efd7;
 }
@@ -126,17 +127,19 @@ body{
 	background-image: url("conpro.png");
 }
 #spname{
-	font-size: 1.2rem;
-	font-family: bariol;
+	font-size: 1.35vw;
+	/*font-family: bariol;*/
 	letter-spacing: 1.75px;
-	/*font-family: "GD";*/
+	font-family: "Bariol";
 	font-weight: bolder;
 	color: #fff;
 	margin: 0;
 	padding: 7px;
 	text-align: center;
-	background-color:#504d51;
+	background-color:rgba(80,77,81,0.5);
+	line-height: 17px;
 }
+
 svg.intro {
   max-width: 80%;
   position: absolute;
@@ -188,17 +191,43 @@ svg.intro.go .text-stroke:nth-child(4) {
           animation-delay: 0.3s;
 }
 .Return{
-	left:46vw;
-	position: absolute;
-	font-family: 'GD';
-	top:25%;
+	left:5vw;
+	position: fixed;
+	top:10vh;
+	color: #fff;
+	font-family: 'Bariol';
+	font-size: 1.6vw;
+/*width: 10vw;*/
+
 }
+#back{  border:2px solid #fff;
+	border-radius: 50%;
+	font-family: 'GD';
+	text-decoration: none;
+	transition: 0.3s linear;
+	padding: 5%;
+    font-size: 2vw;
+    color: #37efd7;
+    transform-origin: center;
+
+}
+#back:hover{
+	color: #fff;
+	border-color:#37efd7 ;
+	border-width: 4px;
+}
+
 @media screen and (max-width: 600px) {
 	.Return{
-		left:30vw;
-		padding: 5%;
-		top:10%;
-		font-size: 4vw;
+		left:5vw;
+		font-size: 2vh;
+		top: 5vh;
+	}
+	#back{
+		font-size: 3vh;
+	}
+	#spname{font-size: 3vh;
+
 	}
 }
 
