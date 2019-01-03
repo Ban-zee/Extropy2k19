@@ -43,7 +43,7 @@
 }
 .About_content{
     font-family: br;
-    font-size: 1.5vw;
+    font-size: 2vw;
     padding: 0.5vw;
     color:blueviolet;
     z-index: 1;
@@ -68,6 +68,7 @@ body{
     z-index: 1;
     position: absolute;
     margin-top: 2%;
+
 }
 @media screen and (max-width: 1000px) {
     .About_content{
@@ -85,7 +86,7 @@ body{
 
 @media screen and (max-width: 600px) {
     .About_content{
-        font-size: 3.5vw;
+        font-size: 3vh;
     }
     .About_heading{
         left:33%;
