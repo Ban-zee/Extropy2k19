@@ -62,4 +62,10 @@ a{
   height: 1px;
   border-top: 1px solid #7d7d7d;
 }
+.event-details{
+    opacity: 0;
+    position: absolute;
 
+  overflow-y: hidden;
+  z-index:  11111;
+}

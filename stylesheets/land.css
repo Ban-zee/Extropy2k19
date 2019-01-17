@@ -5,7 +5,6 @@ body{
 	overflow: hidden;
 	width: 100vw;
 	height: 100vh;
-	scroll-behavior: 
 
 }
 @font-face{
@@ -30,7 +29,7 @@ body{
 #landingcont{display:none;}*/
 nav{
 	position: absolute;
-	z-index: 1101;
+	z-index: 11111;
 	right: 0;
 	width:100vw;
 	display: flex;
