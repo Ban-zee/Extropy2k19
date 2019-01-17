@@ -130,17 +130,23 @@ nav #highl{
 .st0{
 	stroke-dasharray: 300;
     stroke-dashoffset: 300;
-    animation: dash 10s ease-in forwards;
+    animation: dash 12s ease-in forwards;
 }
 .big{
 	stroke-dasharray: 10000;
     stroke-dashoffset: 10000;
-    animation: dash 7s ease-out forwards;
+    animation: dash 20s ease-out forwards;
 }
 #landingcont{
 height: 100vh;
 width: 100vw;
 overflow: hidden;
+}
+#social{
+	width: 100vw;
+	background-color: yellow;
+	height: auto;
+	z-index: 100000;
 }
 @media only screen and  (max-width: 600px) and (orientation: portrait) {
 /*body{transform-origin: 0% 0%;

@@ -59,25 +59,25 @@
 	/*background-image: url("ais.jpg");*/
 }
 #pall{
-background-image: url("pall.jpg");
+background-image: url("./pictures/pall.jpg");
 }
 #ashu{
-
+background-image: url("./pictures/ashu.jpeg");
 }
 #ais{
-background-image: url("ais.jpg");
+background-image: url("./pictures/ais.jpg");
 }
 #som{
-
+background-image: url("./pictures/som.jpg");
 }
 #punni{
-	background-image: url("punni.jpg");
+	background-image: url("./pictures/punni.jpg");
 }
 #ta{
 
 }
 #debs{
-
+background-image: url("./pictures/debs.jpg");
 }
 #kanav{
 

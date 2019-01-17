@@ -4,32 +4,60 @@
     <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/about_section_css.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/spons.css">
     <link rel="shortcut icon" href="stylesheets/final_logo.jpg">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>About-Us</title>
 </head>
 <body>
-<div class="About_section" id="box">
-      <div class = "About_heading">
-        <p class = 'Heading'>
-            About Us
-        </p>
+<div id="box">
+      <div id="title">
+        <svg class="intro" id="svg" viewbox="0 0 80 7">
+          <text text-anchor="start" x="33%" y="7" class="text text-stroke" clip-path="url(#text1)">About</text>
+          <text text-anchor="start" x="57%" y="7" class="text text-stroke" clip-path="url(#text2)">Us</text>
+  
+          <text text-anchor="start" x="33%" y="7" class="text text-stroke text-stroke-2" clip-path="url(#text1)">About</text>
+          <text text-anchor="start" x="57%" y="7" class="text text-stroke text-stroke-2" clip-path="url(#text2)">Us</text>
+         <defs>
+            <clipPath id="text1">
+            <text text-anchor="start" x="33%" y="7" class="text">About</text>
+            </clipPath>
+            <clipPath id="text2">
+            <text text-anchor="start" x="57%" y="7" class="text">Us</text>
+            </clipPath>
+        </defs>
+        </svg>
+        <!-- <p id="ptitle">Past $ponsers</p> -->
     </div>
     <div class= "About_content">
-        <p>
+        <p style="text-align:justify;padding-left:3vw;padding-right:3vw">
            Extropy is the annual Chemical Engineering Symposium organised by the Department of Chemical Engineering, BITS Pilani. It aims to manifest the spirit of chemical engineering in young students in the field. A three-day extravaganza involving lectures, exhibitions, workshops and many fun-with-learning events, the purpose of Extropy includes besides nurturing the spirit of chemical engineering, showcasing the myriad world of Chemical Engineering and providing a boost to the core culture on campus. Past speakers comprise many eminent researchers, industrialists and entrepreneurs from Chemical Engineering and neighbouring fields. This year, in 2019, we strive to reach even newer heights while carrying on the mantle called ‘Extropy’ forward.
 
         </p>
-        <div><a class="Return" href="index.html"><-</a></div>
     </div>
+    <p id="follow"> Follow us on :- </p>
+    <div id="social">
+
+      <a href="https://www.facebook.com/extropy2k19/"><i class='fab fa-facebook-square' style='font-size:48px;color:#06dbd7'></i></a>
+      <a href="https://www.instagram.com/bits_extropy/" ><i class='fab fa-instagram' style='font-size:48px;color:#06dbd7'></i></a>
+      <a href="mailto:extropy2k19@gmail.com"><i class="material-icons" style="font-size:48px;color:#06dbd7">email</i></a>
+
 </div>
+</div>
+<div class="Return"><a id="back" href="landingpage.html"><-</a><br><span>Back</span></div>
 </body>
 <script type="text/javascript">
-    function onld(event) {
-     var box = document.getElementById("box");
-     box.classList.add("boxld");
-     // alert("loded")
- }
-window.onload = onld();
+     function onld(event) {
+      var element = document.getElementById("svg");
+      element.classList.add("go");
+      var box = document.getElementById("box");
+      box.classList.add("boxld");
+      // alert("loded")
+  }
+ window.onload = onld();
+
+</script>
 
 </script>
 </html>

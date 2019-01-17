@@ -49,7 +49,7 @@ body{
 	background-position: 0% 15%;
 	background-size: contain;
 	background-repeat: repeat;
-	background-image: url("bkg3.png");
+	background-image: url("./pictures/bkg3.png");
 
 }
 #box{
@@ -91,6 +91,8 @@ body{
 	align-content: space-between;
 	height: 100%;
 	flex-wrap:wrap;
+	flex-grow: 1;
+
 /*	background:blue;
 */}
 #spons{
@@ -103,7 +105,8 @@ body{
 	height:300px;
 	width: 250px;
 	overflow: hidden;
-	margin-top: 2vh;
+	margin-top: 5vh;
+	margin-left: 3vw;
 }
 #spons:hover {box-shadow: -15px 15px 50px -20px #37efd7;
 }
@@ -118,14 +121,27 @@ body{
 }
 
 #spons1{
-	background-image: url("pictures/Delta.png");
+	background-image: url("pictures/advp.png");
 }
 #spons2{
-	background-image: url("pictures/nandan.png");
+	background-image: url("pictures/std.png");
 }
 #spons3{
+	background-image: url("pictures/hero.png");
+}
+#spons4{
+	background-image: url("pictures/byju.png");
+}
+#spons5{
+	background-image: url("pictures/delta.png");
+}
+#spons6{
+	background-image: url("pictures/nandan.png");
+}
+#spons7{
 	background-image: url("pictures/conpro.png");
 }
+
 #spname{
 	font-size: 1.35vw;
 	/*font-family: bariol;*/
@@ -196,9 +212,7 @@ svg.intro.go .text-stroke:nth-child(4) {
 	top:10vh;
 	color: #fff;
 	font-family: 'Bariol';
-	font-size: 3vw;
-/*width: 10vw;*/
-
+	font-size: 2vw;
 }
 #back{  border:2px solid #fff;
 	border-radius: 50%;
@@ -206,7 +220,7 @@ svg.intro.go .text-stroke:nth-child(4) {
 	text-decoration: none;
 	transition: 0.3s linear;
 	padding: 5%;
-    font-size: 2vw;
+    font-size: 1.75vw;
     color: #37efd7;
     transform-origin: center;
 
@@ -226,8 +240,15 @@ svg.intro.go .text-stroke:nth-child(4) {
 	#back{
 		font-size: 3vh;
 	}
-	#spname{font-size: 3vh;
+	#spname{font-size: 2.7vh;
 
+	}
+	#spons{
+		margin-left: 0;
+	}
+	#title{
+		height: 7vh;
+		padding-top: 2vh;
 	}
 }
 
