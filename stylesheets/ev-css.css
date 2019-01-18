@@ -105,8 +105,9 @@ body{
 	overflow: hidden;
 	margin-top: 2vh;
 }
-#spons:hover {box-shadow: -15px 15px 50px -20px #37efd7;
-}
+#spons::hover
+{box-shadow: -15px 15px 50px -20px #37efd7;}
+
 
 .spimg{
 	background:#fff;
@@ -116,23 +117,26 @@ body{
 	background-repeat:no-repeat;
 	background-position: center;
 }
-
+.spimg:hover{
+	cursor: pointer;
+	box-shadow: -15px 15px 50px -20px #37efd7;
+}
 #spons1{
 	background: url("pictures/aurora.jpg");
-	z-index:  1111111;
+	z-index:  11111111;
 
 }
 #spons2{
 	background-image: url("pictures/chemigraphy_final.png");
-	z-index:  1111111;
+	z-index:  11111111;
 }
 #spons3{
 	background-image: url("pictures/industry-logo_23-2147512323.jpg");
-	z-index:  1111111;
+	z-index:  11111111;
 }
 #spons4{
 	background-image: url("pictures/red car.png");
-z-index:  1111111;
+z-index:  11111111;
 }
 #spname{
 	font-size: 1.35vw;

@@ -13,26 +13,19 @@
     <script src="events.js"></script>
 </head>
 <body>
+<div class="Return-home"><a id="back" href="landingpage.html"><-</a><br><span>Back</span></div>
 <div class="event-details" id = "Competitive">
         <div id="container">
 				<div id="spons">
-					<div class="spimg" id="spons1"></div>
+					<div class="spimg" id="sponsx"></div>
 					<div id="spname">Aurora</div>
 		    	</div>
 		    	<div id="spons">
-					<div class="spimg" id="spons2"></div>
-					<div id="spname">Chemigraphy</div>
-		    	</div>
-		    	<div id="spons">
-					<div class="spimg" id="spons3"></div>
+					<div class="spimg" id="spons00"></div>
 					<div id="spname">Industry 101</div>
 				</div>
                 <div id="spons">
-					<div class="spimg" id="spons4"></div>
-					<div id="spname">Chem-E-Car</div>
-				</div>
-                <div id="spons">
-					<div class="spimg" id="spons4"></div>
+					<div class="spimg" id="spons9"></div>
 					<div id="spname">Chem-q-tempore</div>
 				</div>
 		</div>
@@ -56,21 +49,88 @@
 					<div class="spimg" id="spons8"></div>
 					<div id="spname">Chem-E-Quiz</div>
 				</div>
-
+				<div id="spons">
+					<div class="spimg" id="spons1"></div>
+					<div id="spname">Aurora</div>
+		    	</div>
+				<div id="spons">
+					<div class="spimg" id="spons3"></div>
+					<div id="spname">Industry 101</div>
+				</div>
+				<div id="spons">
+					<div class="spimg" id="spons4"></div>
+					<div id="spname">Chem-q-tempore</div>
+				</div>
 		</div>
 </div>
+<div class = 'individual-events' id = 'ie1'>
+	<h1>Chem-Hunt</h1>
+	<p class="description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+	<h3>Venue: TBA</h3>
+	<h3 >Date: TBA</h3>
+	<h4 id = 'mc1'>&times;</h4>
+</div>
+<div class = 'individual-events' id = 'ie2'>
+	<h1>Chem-Charades</h1>
+	<p class="description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+	<h3>Venue: TBA</h3>
+	<h3 >Date: TBA</h3>
+	<h4 id = 'mc2'>&times;</h4>
+</div>
+<div class = 'individual-events' id = 'ie3'>
+	<h1>Scrapyard</h1>
+	<p class="description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+	<h3>Venue: TBA</h3>
+	<h3 >Date: TBA</h3>
+	<h4 id = 'mc3'>&times;</h4>
+</div>
+<div class = 'individual-events' id = 'ie4'>
+	<h1>Chem-e-Quiz</h1>
+	<p class="description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+	<h3>Venue: TBA</h3>
+	<h3 >Date: TBA</h3>
+	<h4 id = 'mc4'>&times;</h4>
+</div>
+<div class = 'individual-events' id = 'ie5'>
+	<h1>Aurora</h1>
+	<p class="description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+	<h3>Venue: TBA</h3>
+	<h3 >Date: TBA</h3>
+	<h4 id = 'mc5'>&times;</h4>
+</div>
+<div class = 'individual-events' id = 'ie6'>
+	<h1>Industry-101</h1>
+	<p class="description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+	<h3>Venue: TBA</h3>
+	<h3 >Date: TBA</h3>
+	<h4 id = 'mc6'>&times;</h4>
+</div>
+<div class = 'individual-events' id = 'ie7'>
+	<h1>Chem-q-Tempore</h1>
+	<p class="description">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+	<h3>Venue: TBA</h3>
+	<h3 >Date: TBA</h3>
+	<h4 id = 'mc7'>&times;</h4>
+</div>
 <div class="main">
-  <button class="checkpoint01 checkpoint" id="1">Talks</button>
-  <button class="checkpoint02 checkpoint" id="2">Work-Shops</button>
-  <button class="checkpoint03 checkpoint" id="3">Live Events</button>
-  <button class="checkpoint04 checkpoint" id="4">Fun</button>
+  <button class="checkpoint01 checkpoint" id="1">Click Here</button>
+  <button class="checkpoint02 checkpoint" id="2">Click Here</button>
+  <button class="checkpoint03 checkpoint" id="3">Click Here</button>
+  <button class="checkpoint04 checkpoint" id="4">Click Here</button>
 </div>
   <div class="blobsWrapper">
     <div class="section"></div>
     <div class="section"></div>
     <div class="section"></div>
-    <div class="section"><a href="#">Recreation</a></div>
-    <div class="section section04"><a href="#">Competitive</a></div>
+    <div class="section"><a href="#">Live Events</a></div>
+    <div class="section section04"><a href="#">There's More</a></div>
     <div class="section section03"><a href="#">Workshops</a></div>
     <div class="section section02"><a href="#">Talks</a></div>
     <div class="section section01"><a href="#">Scroll Down</a></div>
@@ -161,43 +221,43 @@ function stop04 (){
       var object04 = $('.checkpoint04').offset().top - $(window).scrollTop() -half+10;
 
 
-      if(!active01 && object01 <= 0 ) {
+      if(!active01 && object01 <= 100 ) {
         blobAnimation01.restart();
-        TweenLite.set('.checkpoint01',{background:"#282828"});
+        TweenLite.set('.checkpoint01',{opacity:"1"});
       }
       else if(object01 > 0 ) {
         blobAnimation01.reverse();
-        TweenLite.set('.checkpoint01',{display:"hidden"});
+        TweenLite.set('.checkpoint01',{opacity:"0"});
         active01 = false;
       }
 
       if(!active02 && object02 <= 0 ) {
         blobAnimation02.restart();
-        TweenLite.set('.checkpoint02',{background:"#282828"});
+        TweenLite.set('.checkpoint02',{opacity:"1"});
       }
       else if(object02 > 0 ) {
         blobAnimation02.reverse();
-        TweenLite.set('.checkpoint02',{display:"hidden"});
+        TweenLite.set('.checkpoint02',{opacity:"0"});
         active02 = false;
       }
 
       if(!active03 && object03 <= 0 ) {
         blobAnimation03.restart();
-        TweenLite.set('.checkpoint03',{background:"#282828"});
+        TweenLite.set('.checkpoint03',{opacity:"0"});
       }
       else if(object03 > 0 ) {
         blobAnimation03.reverse();
-        TweenLite.set('.checkpoint03',{display:"hidden"});
+        TweenLite.set('.checkpoint03',{opacity:"0"});
         active03 = false;
       }
 
       if(!active04 && object04 <= 0 ) {
         blobAnimation04.restart();
-        TweenLite.set('.checkpoint04',{background:"#282828"});
+        TweenLite.set('.checkpoint04',{opacity:"1"});
       }
       else if(object04 > 0 ) {
         blobAnimation04.reverse();
-        TweenLite.set('.checkpoint04',{display:"hidden"});
+        TweenLite.set('.checkpoint04',{opacity:"0"});
         active04 = false;
       }
 
@@ -222,6 +282,7 @@ function stop04 (){
     	brodal.style.transition = "1s";
     	close_button.style.display = "block";
     	document.documentElement.scrollTop = 0;
+    	document.getElementsByClassName("Return-home")[0].style.display="none";
     	blob.style.opacity = "0";
     	main.style.opacity = "0";
 	}
@@ -229,6 +290,7 @@ function stop04 (){
         modal.style.opacity = "1";
         modal.style.transition = "1s";
         close_button.style.display = "block";
+        document.getElementsByClassName("Return-home")[0].style.display="none";
         document.documentElement.scrollTop =0;
         blob.style.opacity = "0";
         main.style.opacity = "0";
@@ -242,9 +304,114 @@ function stop04 (){
 		blob.style.transition = "1s";
 		main.style.opacity = "1";
 		main.style.transition = "1s";
+		document.getElementsByClassName("Return-home")[0].style.display="block";
 	}
 </script>
 <script>
-	chemhunt = document.getElementById("")
+	chemhunt = document.getElementById("spons5");
+	chem_charade = document.getElementById("spons6");
+	sc = document.getElementById("spons7");
+	cqz = document.getElementById("spons8");
+	au = document.getElementById("spons1");
+	i1 = document.getElementById("spons3");
+	cq = document.getElementById("spons4");
+	closer_1 = document.getElementById("mc1");
+	closer_2 = document.getElementById("mc2");
+	closer_3 = document.getElementById("mc3");
+	closer_4 = document.getElementById("mc4");
+	closer_5 = document.getElementById("mc5");
+	closer_6 = document.getElementById("mc6");
+	closer_7 = document.getElementById("mc7");
+	chemhunt.onclick = function () {
+		document.getElementById("ie1").style.display="block";
+		document.documentElement.scrollTop = 0;
+	}
+	chem_charade.onclick = function(){
+		document.getElementById("ie2").style.display="block";
+		document.documentElement.scrollTop = 0;
+	}
+	sc.onclick = function(){
+		document.getElementById("ie3").style.display="block";
+		document.documentElement.scrollTop = 0;
+	}
+	cqz.onclick = function(){
+		document.getElementById("ie4").style.display="block";
+		document.documentElement.scrollTop = 0;
+	}
+	au.onclick = function(){
+		document.getElementById("ie5").style.display="block";
+		document.documentElement.scrollTop = 0;
+	}
+	i1.onclick = function(){
+		document.getElementById("ie6").style.display="block";
+		document.documentElement.scrollTop = 0;
+	}
+	cq.onclick = function(){
+		document.getElementById("ie7").style.display="block";
+		document.documentElement.scrollTop = 0;
+	}
+	closer_1.onclick = function () {
+		document.getElementById("ie1").style.display="none";
+		document.getElementById("ie2").style.display="none";
+		document.getElementById("ie4").style.display="none";
+		document.getElementById("ie5").style.display="none";
+		document.getElementById("ie3").style.display="none";
+		document.getElementById("ie7").style.display="none";
+		document.getElementById("ie6").style.display="none";
+	}
+	closer_2.onclick = function () {
+		document.getElementById("ie1").style.display="none";
+		document.getElementById("ie2").style.display="none";
+		document.getElementById("ie4").style.display="none";
+		document.getElementById("ie5").style.display="none";
+		document.getElementById("ie3").style.display="none";
+		document.getElementById("ie7").style.display="none";
+		document.getElementById("ie6").style.display="none";
+	}
+	closer_3.onclick = function () {
+		document.getElementById("ie1").style.display="none";
+		document.getElementById("ie2").style.display="none";
+		document.getElementById("ie4").style.display="none";
+		document.getElementById("ie5").style.display="none";
+		document.getElementById("ie3").style.display="none";
+		document.getElementById("ie7").style.display="none";
+		document.getElementById("ie6").style.display="none";
+	}
+	closer_4.onclick = function () {
+		document.getElementById("ie1").style.display="none";
+		document.getElementById("ie2").style.display="none";
+		document.getElementById("ie4").style.display="none";
+		document.getElementById("ie5").style.display="none";
+		document.getElementById("ie3").style.display="none";
+		document.getElementById("ie7").style.display="none";
+		document.getElementById("ie6").style.display="none";
+	}
+	closer_5.onclick = function () {
+		document.getElementById("ie1").style.display="none";
+		document.getElementById("ie2").style.display="none";
+		document.getElementById("ie4").style.display="none";
+		document.getElementById("ie5").style.display="none";
+		document.getElementById("ie3").style.display="none";
+		document.getElementById("ie7").style.display="none";
+		document.getElementById("ie6").style.display="none";
+	}
+	closer_6.onclick = function () {
+		document.getElementById("ie1").style.display="none";
+		document.getElementById("ie2").style.display="none";
+		document.getElementById("ie4").style.display="none";
+		document.getElementById("ie5").style.display="none";
+		document.getElementById("ie3").style.display="none";
+		document.getElementById("ie7").style.display="none";
+		document.getElementById("ie6").style.display="none";
+	}
+	closer_7.onclick = function () {
+		document.getElementById("ie1").style.display="none";
+		document.getElementById("ie2").style.display="none";
+		document.getElementById("ie4").style.display="none";
+		document.getElementById("ie5").style.display="none";
+		document.getElementById("ie3").style.display="none";
+		document.getElementById("ie7").style.display="none";
+		document.getElementById("ie6").style.display="none";
+	}
 </script>
 </html>

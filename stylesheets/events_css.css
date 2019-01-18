@@ -6,6 +6,49 @@ body{
   font-family: Gravedigger;
   src:url('fonts/Gravedigger.otf')
 }
+@font-face {
+    font-family: Bariol;
+    src: url('fonts/Bariol.otf');
+}
+@media screen and (max-width: 1000px) {
+    .About_content{
+        font-size: 2.5vw;
+    }
+    .About_heading{
+        margin-left: 0;
+        font-size: 4vw;
+    }
+    .Return-home{
+        font-size: 3.5vw;
+        margin-top: 2%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .About_content{
+        font-size: 3vh;
+    }
+    .About_heading{
+        left:33%;
+        font-size: 4vw;
+    }
+   .Return-home{
+        left:5vw;
+        font-size: 3.5vh;
+        top: 5vh;
+    }
+    #back{
+        font-size: 3vh;
+    }
+}
+.Return-home{
+    left:5vw;
+    position: fixed;
+    top:10vh;
+    color: #fff;
+    font-family: 'Bariol';
+    font-size: 3vw;
+  z-index: 100000000000;
+}
 a{
   position: relative;
   top: 40%;
@@ -47,6 +90,7 @@ a{
   background: #282828;
   font-family: Gravedigger;
   color: #37efd7;
+  left:45vw;
 }
 @media screen and(max-width:600px){
   .checkpoint{
@@ -68,4 +112,56 @@ a{
 
   overflow-y: hidden;
   z-index:  11111;
+}
+.individual-events{
+    width:50vw;
+    height: 60vh;
+    display: none;
+    z-index: 111111111111111111111111111;
+    position: absolute;
+    background-color: #282828;
+    display: none;
+    top:10vw;
+    left:25vw;
+    animation: zoom;
+    animation-duration: 0.6s;
+    color: #37efd7;
+}
+.individual-events h1, h3, h4{
+    font-family: Bariol;
+}
+.description{
+    font-family: Bariol;
+    color: white;
+}
+h4{
+    float: right;
+    position: relative;
+    top: -72%;
+    font-size: 8vh;
+}
+h4:hover{
+    cursor: pointer;
+}
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+@media only screen and (max-width: 700px){
+  .individual-events {
+    width: 100vw;
+      height: 100vh;
+      top:0;
+      left: 0;
+  }
+    h4{
+        float: left;
+        top: 0;
+
+    }
 }
