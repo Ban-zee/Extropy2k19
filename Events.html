@@ -18,15 +18,11 @@
         <div id="container">
 				<div id="spons">
 					<div class="spimg" id="sponsx"></div>
-					<div id="spname">Aurora</div>
+					<div id="spname">Matlab</div>
 		    	</div>
-		    	<div id="spons">
-					<div class="spimg" id="spons00"></div>
-					<div id="spname">Industry 101</div>
-				</div>
                 <div id="spons">
-					<div class="spimg" id="spons9"></div>
-					<div id="spname">Chem-q-tempore</div>
+					<div class="spimg" id="spons00"></div>
+					<div id="spname">Ansys</div>
 				</div>
 		</div>
 </div>
@@ -66,7 +62,7 @@
 <div class = 'individual-events' id = 'ie1'>
 	<h1>Chem-Hunt</h1>
 	<p class="description">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		This February play the famous Treasure Hunt with an unexpected twist. A mystery which sprawls across the whole campus with nerve-wracking puzzles and labyrinths and forces you to put on your thinking caps with a nice surprise at the end and exciting prizes to be won.
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
 	<h4 id = 'mc1'>&times;</h4>
@@ -74,7 +70,7 @@
 <div class = 'individual-events' id = 'ie2'>
 	<h1>Chem-Charades</h1>
 	<p class="description">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		A Game of Pictionary and Charades where the participants have to brush the dust off  the periodic tables in their brain even as their partner sketch and conjure up visual clues to depict the material given to them.
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
 	<h4 id = 'mc2'>&times;</h4>
@@ -98,7 +94,7 @@
 <div class = 'individual-events' id = 'ie5'>
 	<h1>Aurora</h1>
 	<p class="description">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		A Science Exhibition comprising participation of students from various schools of Pilani. Aimed at instilling scientific attitude in the young minds of Pilani and providing them the chance to showcase their scientific caliber, Aurora attempts to bring together the creativity and application of the students of Pilani. The projects would be judged and evaluated by the honorable professors of Pilani.
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
 	<h4 id = 'mc5'>&times;</h4>
@@ -106,7 +102,7 @@
 <div class = 'individual-events' id = 'ie6'>
 	<h1>Industry-101</h1>
 	<p class="description">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		An Event that provides participants a chance to step into the shoes of industrial troubleshooters by finding the solutions to questions specifically designed by industrial experts. Solve any one of them and you may be the winner.This event is aimed at bridging the gap between institutional learning and an industrial crisis all while testing the mental fortitude of the participants.
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
 	<h4 id = 'mc6'>&times;</h4>
@@ -130,9 +126,9 @@
     <div class="section"></div>
     <div class="section"></div>
     <div class="section"><a href="#">Live Events</a></div>
-    <div class="section section04"><a href="#">There's More</a></div>
-    <div class="section section03"><a href="#">Workshops</a></div>
-    <div class="section section02"><a href="#">Talks</a></div>
+    <div class="section section04"><a href="#">Workshops</a></div>
+    <div class="section section03"><a href="#">Wait for it</a></div>
+    <div class="section section02"><a href="#">Online Events</a></div>
     <div class="section section01"><a href="#">Scroll Down</a></div>
   </div>
 
@@ -221,29 +217,41 @@ function stop04 (){
       var object04 = $('.checkpoint04').offset().top - $(window).scrollTop() -half+10;
 
 
-      if(!active01 && object01 <= 100 ) {
+      if(!active01 && object01 <= 0 ) {
         blobAnimation01.restart();
-        TweenLite.set('.checkpoint01',{opacity:"1"});
+        TweenLite.set('.checkpoint01',{opacity:"0"});
+         TweenLite.set('.checkpoint02',{opacity:"0"});
+          TweenLite.set('.checkpoint03',{opacity:"0"});
+           TweenLite.set('.checkpoint04',{opacity:"0"});
       }
       else if(object01 > 0 ) {
         blobAnimation01.reverse();
         TweenLite.set('.checkpoint01',{opacity:"0"});
+         TweenLite.set('.checkpoint02',{opacity:"0"});
+          TweenLite.set('.checkpoint03',{opacity:"0"});
+           TweenLite.set('.checkpoint04',{opacity:"0"});
         active01 = false;
       }
 
       if(!active02 && object02 <= 0 ) {
         blobAnimation02.restart();
-        TweenLite.set('.checkpoint02',{opacity:"1"});
+        TweenLite.set('.checkpoint02',{opacity:"0"});
+         TweenLite.set('.checkpoint03',{opacity:"0"});
+          TweenLite.set('.checkpoint04',{opacity:"0"});
+           TweenLite.set('.checkpoint01',{opacity:"0"});
       }
       else if(object02 > 0 ) {
         blobAnimation02.reverse();
         TweenLite.set('.checkpoint02',{opacity:"0"});
+         TweenLite.set('.checkpoint01',{opacity:"0"});
+          TweenLite.set('.checkpoint03',{opacity:"0"});
+           TweenLite.set('.checkpoint04',{opacity:"0"});
         active02 = false;
       }
 
       if(!active03 && object03 <= 0 ) {
         blobAnimation03.restart();
-        TweenLite.set('.checkpoint03',{opacity:"0"});
+        TweenLite.set('.checkpoint03',{opacity:"1"});
       }
       else if(object03 > 0 ) {
         blobAnimation03.reverse();
@@ -305,6 +313,13 @@ function stop04 (){
 		main.style.opacity = "1";
 		main.style.transition = "1s";
 		document.getElementsByClassName("Return-home")[0].style.display="block";
+		document.getElementById("ie1").style.display="none";
+		document.getElementById("ie2").style.display="none";
+		document.getElementById("ie4").style.display="none";
+		document.getElementById("ie5").style.display="none";
+		document.getElementById("ie3").style.display="none";
+		document.getElementById("ie7").style.display="none";
+		document.getElementById("ie6").style.display="none";
 	}
 </script>
 <script>
@@ -325,6 +340,7 @@ function stop04 (){
 	chemhunt.onclick = function () {
 		document.getElementById("ie1").style.display="block";
 		document.documentElement.scrollTop = 0;
+		this.style.pointerEvents = "auto";
 	}
 	chem_charade.onclick = function(){
 		document.getElementById("ie2").style.display="block";
