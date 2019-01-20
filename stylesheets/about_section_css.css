@@ -78,20 +78,17 @@ body{
 @media screen and (max-width: 600px) {
     .About_content{
         font-size: 3vh;
+        margin-top: 2vh;
     }
     .About_heading{
         left:33%;
         font-size: 4vw;
     }
-   .Return-home{
-        left:5vw;
-        font-size: 3.5vh;
-        top: 5vh;
-    }
+
     #back{
         font-size: 3vh;
     }
-}
+   }
 .Return-home{
     left:5vw;
     position: fixed;

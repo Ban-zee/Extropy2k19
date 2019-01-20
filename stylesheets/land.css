@@ -142,50 +142,44 @@ height: 100vh;
 width: 100vw;
 overflow: hidden;
 }
-#social{
-	width: 100vw;
-	background-color: yellow;
-	height: auto;
-	z-index: 100000;
-}
+	
 @media only screen and  (max-width: 600px) and (orientation: portrait) {
 /*body{transform-origin: 0% 0%;
 	transform: rotate(-90deg);}*/
 body{
 		overflow-x: hidden;
 	}
-#landsvg{transform: rotate(-90deg)scale(1.6)translateX(0px)translateY(0px) ;}
+#landsvg{
+	transform: rotate(-90deg)scale(1.6)translateX(0px)translateY(-30px);
+	/*position: absolute;
+	top: 0;*/
+}
 
 #nav{
-	transform: rotate(-90deg);
-	/*background-color: blue;*/
-	top:50vh;
-	left: -70vw;
+	top:4vh;
+	left: 5vw;
 	margin: 0;
-	width: 90vh;
-	font-size: 2vw;
+	width: 90vw;
+	font-size: 1.25vw;
 }
 #titleland{
-	transform: rotate(-90deg);
+	/*transform: rotate(-90deg);*/
 }
-h1{margin-left: 25%;
-	margin-top: 7%;
+h1{position: absolute;
+   top:40.7vh;   
    padding: 0}
-#dates{margin-left: 25%;
-	margin-top: 5%;
+#dates{
+	margin-top: 0%;
    padding: 0
 
 }
-#timer{
+/*#timer{
 	    height: 40vh;
 		transform: scale(0.9) rotate(-90deg) ;
 		position: absolute;
 		left: 7vw;
 		top:-13vh;
-		/*background: red;*/
-		
- 
-}
+}*/
 
 /*#bkg{transform: rotate(-90deg);}*/
 }

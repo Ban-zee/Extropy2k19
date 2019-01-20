@@ -45,6 +45,8 @@
 	text-align: center;
 	font-size: 2vw;
 	font-family: 'Gd';
+	word-spacing: 3px;
+	letter-spacing: 2px;
 }
 #team{
 	display: flex;

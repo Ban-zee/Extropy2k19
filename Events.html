@@ -2,140 +2,309 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Events</title>
     <link rel="stylesheet" href="stylesheets/events_css.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/ev-css.css">
-    <link rel="stylesheet" type="text/css" href="stylesheets/ev_css-2.css">
+    <!-- <link rel="stylesheet" type="text/css" href="stylesheets/ev-css.css"> -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/spons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/MorphSVGPlugin.min.js"></script>
-    <link rel="shortcut icon" href="stylesheets/final_logo.jpg">
-    <script src="events.js"></script>
+    <link rel="shortcut icon" href="stylesheets/pictures/final_logo.jpg">
+    <!-- <script src="events.js"></script> -->
 </head>
 <body>
-<div class="Return-home"><a id="back" href="landingpage.html"><-</a><br><span>Back</span></div>
-<div class="event-details" id = "Competitive">
-        <div id="container">
+
+<div class="event-details" id = "workshop">
+	<div id="box">
+	<div id="title">
+		<svg class="intro" id="svg" viewbox="0 0 80 7">
+          <text text-anchor="start" x="30%" y="6" class="text text-stroke" clip-path="url(#text1)">Work</text>
+          <text text-anchor="start" x="49%" y="6" class="text text-stroke" clip-path="url(#text2)">shops</text>
+  
+          <text text-anchor="start" x="30%" y="6" class="text text-stroke text-stroke-2" clip-path="url(#text1)">Work</text>
+          <text text-anchor="start" x="49%" y="6" class="text text-stroke text-stroke-2" clip-path="url(#text2)">shops</text>
+         <defs>
+            <clipPath id="text1">
+            <text text-anchor="start" x="30%" y="6" class="text">Work</text>
+            </clipPath>
+    		<clipPath id="text2">
+      		<text text-anchor="start" x="49%" y="6" class="text">shops</text>
+    		</clipPath>
+  		</defs>
+		</svg>
+	</div><p style="color: #fff;text-align: center;">Click on events to get info</p>
+			<div id="container">
 				<div id="spons">
-					<div class="spimg" id="sponsx"></div>
+					<div class="spimg" id="workshop1"></div>
 					<div id="spname">Matlab</div>
 		    	</div>
                 <div id="spons">
-					<div class="spimg" id="spons00"></div>
+						<div class="spimg" id="workshop2"></div>
 					<div id="spname">Ansys</div>
 				</div>
 		</div>
+		<div class="Return"><a id="back" href ="Events.html"><-</a><br><span>Back</span></div>
+
+	</div>
+				
 </div>
-<div class="Return">&#127485</div>
-<div class = "event-details" id = "fun">
-        <div id="container">
-				<div id="spons">
-					<div class="spimg" id="spons5"></div>
+<!-- <div class="Return">&#127485</div> -->
+<div class = "event-details" id = "live">
+   <div id="box">
+	<div id="title">
+		<svg class="intro" id="svg" viewbox="0 0 80 7">
+          <text text-anchor="start" x="33%" y="6" class="text text-stroke" clip-path="url(#text1)" style="font-size: 2.75px">Live</text>
+          <text text-anchor="start" x="49%" y="6" class="text text-stroke" clip-path="url(#text2)" style="font-size: 2.75px">Events</text>
+  
+          <text text-anchor="start" x="33%" y="6" class="text text-stroke text-stroke-2" style=" stroke-width: 0.325px;font-size: 2.75px" clip-path="url(#text1)">Live</text>
+          <text text-anchor="start" x="49%" y="6" class="text text-stroke text-stroke-2" style=" stroke-width: 0.325px;font-size: 2.75px" clip-path="url(#text2)">Events</text>
+         <defs>
+            <clipPath id="text1">
+            <text text-anchor="start" x="33%" y="6" class="text">Live</text>
+            </clipPath>
+    		<clipPath id="text2">
+      		<text text-anchor="start" x="49%" y="6" class="text">Events</text>
+    		</clipPath>
+  		</defs>
+		</svg>
+	</div><p style="color: #fff;text-align: center;">Click on events to get info</p>
+			<div id="container">
+				<div id="spons" onclick="openevent('chemhunt')">
+					<div class="spimg" id="live1"></div>
 					<div id="spname">Chemhunt</div>
 		    	</div>
-		    	<div id="spons">
-					<div class="spimg" id="spons6"></div>
+		    	<div id="spons"  onclick="openevent('charads')">
+					<div class="spimg" id="live2"></div>
 					<div id="spname">Chem-charades</div>
 		    	</div>
-		    	<div id="spons">
-					<div class="spimg" id="spons7"></div>
+		    	<div id="spons"  onclick="openevent('scrap')">
+					<div class="spimg" id="live3"></div>
 					<div id="spname">Scrapyard</div>
 				</div>
-                <div id="spons">
-					<div class="spimg" id="spons8"></div>
+				<div id="spons"  onclick="openevent('quiz')">
+					<div class="spimg" id="live4"></div>
 					<div id="spname">Chem-E-Quiz</div>
 				</div>
-				<div id="spons">
-					<div class="spimg" id="spons1"></div>
+				<div id="spons"  onclick="openevent('a&d')">
+					<div class="spimg" id="live5"></div>
+					<div id="spname">Angels & Demons</div>
+				</div>
+	</div>
+		<div class="Return"><a id="back" href ="Events.html"><-</a><br><span>Back</span></div>
+
+	</div>
+				
+</div>
+<!-- <div class="Return">&#127485</div> -->
+<div class = "event-details" id ="tech">
+   <div id="box">
+	<div id="title">
+		<svg class="intro" id="svg" viewbox="0 0 80 7">
+          <text text-anchor="start" x="31%" y="6" class="text text-stroke" style=" font-size: 2.75px" clip-path="url(#text1)">Tech</text>
+          <text text-anchor="start" x="49%" y="6" class="text text-stroke" style=" font-size: 2.75px"  clip-path="url(#text2)">Events</text>
+  
+          <text text-anchor="start" x="31%" y="6" class="text text-stroke text-stroke-2" style=" stroke-width: 0.325px;font-size: 2.75px" clip-path="url(#text1)">Tech</text>
+          <text text-anchor="start" x="49%" y="6" class="text text-stroke text-stroke-2" style=" stroke-width: 0.325px;font-size: 2.75px" clip-path="url(#text2)">Events</text>
+         <defs>
+            <clipPath id="text1">
+            <text text-anchor="start" x="31%" y="6" class="text">Tech</text>
+            </clipPath>
+    		<clipPath id="text2">
+      		<text text-anchor="start" x="49%" y="6" class="text">Events</text>
+    		</clipPath>
+  		</defs>
+		</svg>
+		<!-- <p id="ptitle">Past $ponsers</p> -->
+	</div><p style="color: #fff;text-align: center;">Click on events to get info</p>
+	<div id="container">
+			
+                
+				<div id="spons" onclick = "openevent('auro')">
+					<div class="spimg" id="tech1"></div>
 					<div id="spname">Aurora</div>
 		    	</div>
-				<div id="spons">
-					<div class="spimg" id="spons3"></div>
+				<div id="spons" onclick="openevent('101')">
+					<div class="spimg" id="tech2"></div>
 					<div id="spname">Industry 101</div>
 				</div>
-				<div id="spons">
-					<div class="spimg" id="spons4"></div>
+				<!-- <div id="spons">
+					<div class="spimg" id="tech5"></div>
 					<div id="spname">Chem-q-tempore</div>
-				</div>
+				</div> -->
 		</div>
+		<div class="Return"><a id="back" href ="Events.html"><-</a><br><span>Back</span></div>
+
+	</div>
+				
 </div>
-<div class = 'individual-events' id = 'ie1'>
-	<h1>Chem-Hunt</h1>
+
+<div class = "event-details" id ="online">
+   <div id="box">
+	<div id="title">
+		<svg class="intro" id="svg" viewbox="0 0 80 7">
+          <text text-anchor="start" x="28%" y="6" class="text text-stroke" style=" font-size: 2.75px" clip-path="url(#text1)">Online</text>
+          <text text-anchor="start" x="50%" y="6" class="text text-stroke" style=" font-size: 2.75px"  clip-path="url(#text2)">Events</text>
+  
+          <text text-anchor="start" x="28%" y="6" class="text text-stroke text-stroke-2" style=" stroke-width: 0.325px;font-size: 2.75px" clip-path="url(#text1)">Online</text>
+          <text text-anchor="start" x="50%" y="6" class="text text-stroke text-stroke-2" style=" stroke-width: 0.325px;font-size: 2.75px" clip-path="url(#text2)">Events</text>
+         <defs>
+            <clipPath id="text1">
+            <text text-anchor="start" x="28%" y="6" class="text">Online</text>
+            </clipPath>
+    		<clipPath id="text2">
+      		<text text-anchor="start" x="50%" y="6" class="text">Events</text>
+    		</clipPath>
+  		</defs>
+		</svg>
+		<!-- <p id="ptitle">Past $ponsers</p> -->
+	</div>
+	<div id="container">
+				<div id="spons"onclick = "openevent('chemi')">
+					<div class="spimg" id="ol1"></div>
+					<div id="spname">Chemigraphy</div>
+		    	</div>
+			
+		</div>
+		<div class="Return"><a id="back" href ="Events.html"><-</a><br><span>Back</span></div>
+
+	</div>				
+</div>
+
+<!-- ***************************Individual events************************ -->
+<div class = 'individual-events' id = 'chemhunt'>
+	<h1 class="event-title">Chem-Hunt</h1>
 	<p class="description">
-		This February play the famous Treasure Hunt with an unexpected twist. A mystery which sprawls across the whole campus with nerve-wracking puzzles and labyrinths and forces you to put on your thinking caps with a nice surprise at the end and exciting prizes to be won.
+		This February play the famous Treasure Hunt with an unexpected twist. A mystery which sprawls across the whole campus with nerve-wracking puzzles and labyrinths and forces you to put on your thinking caps with a nice surprise at the end and exciting prizes to be won.</p>
 	<h3>Venue: TBA</h3>
-	<h3 >Date: TBA</h3>
-	<h4 id = 'mc1'>&times;</h4>
+	<h3>Date: TBA</h3>
+	<h4 class="cross" onclick="closeevent('chemhunt')"><span class="crossX">&times;</span></h4>
 </div>
-<div class = 'individual-events' id = 'ie2'>
-	<h1>Chem-Charades</h1>
+
+<div class = 'individual-events' id = 'charads'>
+	<h1 class="event-title">Chem-Charades</h1>
 	<p class="description">
 		A Game of Pictionary and Charades where the participants have to brush the dust off  the periodic tables in their brain even as their partner sketch and conjure up visual clues to depict the material given to them.
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
-	<h4 id = 'mc2'>&times;</h4>
+	<h4 class="cross" onclick="closeevent('charads')"><span class="crossX">&times;</span></h4>
 </div>
-<div class = 'individual-events' id = 'ie3'>
-	<h1>Scrapyard</h1>
+
+<div class = 'individual-events' id = 'scrap'>
+	<h1 class="event-title">Scrapyard</h1>
 	<p class="description">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		Use your creativity and analytical skills to create best techincal stuff from junkyard. Tight your pants and get ready to work tirelessly while having fun,learning and prizes. 
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
-	<h4 id = 'mc3'>&times;</h4>
+	<h4 class="cross" onclick="closeevent('scrap')"><span class="crossX">&times;</span></h4>
 </div>
-<div class = 'individual-events' id = 'ie4'>
-	<h1>Chem-e-Quiz</h1>
+
+<div class = 'individual-events' id = 'quiz'>
+	<h1 class="event-title">Chem-e-Quiz</h1>
 	<p class="description">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		A blend of practical, curiosity enhancing and unique (may be very odd) questions which does not require chemical enginnering knowledge. <br><br><br><i>If your not a chemical engineer than its for you.</i>
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
-	<h4 id = 'mc4'>&times;</h4>
+	<h4 class="cross" onclick="closeevent('quiz')"><span class="crossX">&times;</span></h4>
 </div>
-<div class = 'individual-events' id = 'ie5'>
-	<h1>Aurora</h1>
+<div class = 'individual-events' id = 'auro'>
+	<h1 class="event-title">Aurora</h1>
 	<p class="description">
 		A Science Exhibition comprising participation of students from various schools of Pilani. Aimed at instilling scientific attitude in the young minds of Pilani and providing them the chance to showcase their scientific caliber, Aurora attempts to bring together the creativity and application of the students of Pilani. The projects would be judged and evaluated by the honorable professors of Pilani.
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
-	<h4 id = 'mc5'>&times;</h4>
+	<h4 class="cross" onclick="closeevent('auro')"><span class="crossX">&times;</span></h4>
 </div>
-<div class = 'individual-events' id = 'ie6'>
-	<h1>Industry-101</h1>
+<div class = 'individual-events' id = '101'>
+	<h1 class="event-title">Industry-101</h1>
 	<p class="description">
 		An Event that provides participants a chance to step into the shoes of industrial troubleshooters by finding the solutions to questions specifically designed by industrial experts. Solve any one of them and you may be the winner.This event is aimed at bridging the gap between institutional learning and an industrial crisis all while testing the mental fortitude of the participants.
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
-	<h4 id = 'mc6'>&times;</h4>
+	<h4 class="cross" onclick="closeevent('101')"><span class="crossX">&times;</span></h4>
 </div>
-<div class = 'individual-events' id = 'ie7'>
+
+<div class = 'individual-events' id = 'a&d'>
+	<h1 class="event-title">Angels & Demons</h1>
+	<p class="description">
+		An Event that provides participants a chance to step into the shoes of industrial troubleshooters by finding the solutions to questions specifically designed by industrial experts. Solve any one of them and you may be the winner.This event is aimed at bridging the gap between institutional learning and an industrial crisis all while testing the mental fortitude of the participants.
+	<h3>Venue: TBA</h3>
+	<h3 >Date: TBA</h3>
+	<h4 class="cross" onclick="closeevent('a&d')"><span class="crossX">&times;</span></h4>
+</div>
+
+<!-- <div class = 'individual-events' id = ''>
 	<h1>Chem-q-Tempore</h1>
 	<p class="description">
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit
 	<h3>Venue: TBA</h3>
 	<h3 >Date: TBA</h3>
 	<h4 id = 'mc7'>&times;</h4>
-</div>
+</div> -->
+<div id="sectioncont">
+	<div class="Return-home"><a id="back" href="landingpage.html"><-</a><br><span>Back</span></div>
 <div class="main">
-  <button class="checkpoint01 checkpoint" id="1">Click Here</button>
-  <button class="checkpoint02 checkpoint" id="2">Click Here</button>
-  <button class="checkpoint03 checkpoint" id="3">Click Here</button>
-  <button class="checkpoint04 checkpoint" id="4">Click Here</button>
+  <button class="checkpoint01 checkpoint" id="1"></button>
+  <button class="checkpoint02 checkpoint" id="2"></button>
+  <button class="checkpoint03 checkpoint" id="3"></button>
+  <button class="checkpoint04 checkpoint" id="4"></button>
+  <button class="checkpoint05 checkpoint" id="5"></button>
+
 </div>
   <div class="blobsWrapper">
     <div class="section"></div>
     <div class="section"></div>
     <div class="section"></div>
-    <div class="section"><a href="#">Live Events</a></div>
-    <div class="section section04"><a href="#">Workshops</a></div>
-    <div class="section section03"><a href="#">Wait for it</a></div>
-    <div class="section section02"><a href="#">Online Events</a></div>
-    <div class="section section01"><a href="#">Scroll Down</a></div>
+    <div class="section section05"><a style="font-size: 4.15vw" onclick="opentype('online')">Online &nbspEvents</a></div><!-- live -->
+    <div class="section section04"><a style="font-size: 4.15vw" onclick="opentype('live')">Live&nbsp Events</a></div><!-- wshop -->
+    <div class="section section03"><a style="font-size: 4vw" onclick="opentype('tech')">Tech &nbspEvents</a></div><!-- tech -->
+    <div class="section section02"><a style="font-size: 4vw" onclick="opentype('workshop')">Workshops</a></div><!-- online -->
+    <div class="section section01"><a style="font-size: 5vw" href="#">Scroll Down<br><span id="note">(Click on event category's name to open it)</span></a></div>
   </div>
 
 
 <div class="half"></div>
+</div>
 </body>
 <script>
+
+// var workshop = document.getElementById("workshop");
+// var live = document.getElementById("live");
+// var tech = document.getElementById("tech");
+// var online = document.getElementById("online");
+
+var sectioncont = document.getElementById("sectioncont");
+
+function opentype(category){
+		// alert("hii");
+		onld(category);
+		document.getElementById(category).style.display = "block";
+        sectioncont.style.display = "none";
+        setTimeout( function(){
+        	document.getElementById(category).style.opacity = 1;
+        },200)
+	}
+function closeevent(evname){
+	document.getElementById(evname).style.opacity = 0;
+	  setTimeout( function(){
+        	document.getElementById(evname).style.display = "none";
+        },500);
+	// document.getElementById(this.target.parentNode.id).style.display="none";
+}
+ function openevent(evname){
+		document.getElementById(evname).style.display = "block";
+		document.getElementById(evname).style.opacity = 1;
+        // document.getElementById(event.target.id).style.color = color;style.display = "none";
+	}
+
+
+ function onld(tit) {
+      var element = document.getElementById(tit).querySelector('#svg');
+      element.classList.add("go");
+      var box = document.getElementById(tit).querySelector("#box");
+      box.classList.add("boxld");
+      // alert("loded")
+  }
     console.clear();
 
 TweenMax.set("h1, .checkpoint",{yPercent:-50, autoAlpha:1});
@@ -150,6 +319,8 @@ var half = window.innerHeight/2;
   TweenMax.set(".checkpoint02", {y:1000});
   TweenMax.set(".checkpoint03", {y:1500});
   TweenMax.set(".checkpoint04", {y:2000});
+  TweenMax.set(".checkpoint05", {y:2500});
+
 
 var sections = $('.section');
 
@@ -165,7 +336,7 @@ var sections = $('.section');
       borderRadius:function(index){
         return (index+1) * 10+30 +"vw";
       },
-      background:['black', '#424242','#282828']
+      background:['#253237', '#434E54','#64737B']
     }
   },-0.1)
 
@@ -194,6 +365,12 @@ var blobAnimation04 = new TimelineMax({paused:true, onStart:stop04})
 .to(".section04",0, {autoAlpha:0})
 .staggerTo(".section",0.3,{scale:0.6,transformOrigin:"center"},-0.1)
 
+var active05 = false;
+var blobAnimation05 = new TimelineMax({paused:true, onStart:stop05})
+.to(".section05", 0.3, {scale:0, transformOrigin:"center"})
+.to(".section05",0, {autoAlpha:0})
+.staggerTo(".section",0.3,{scale:0.5,transformOrigin:"center"},-0.1)
+
 function stop01 (){
   active01 = true;
 }
@@ -206,46 +383,41 @@ function stop03 (){
 function stop04 (){
   active04 = true;
 }
-
+function stop05 (){
+  active01 = true;
+}
   onResize = function() {
 
     $( window ).scroll(function() {
 
-      var object01 = $('.checkpoint01').offset().top - $(window).scrollTop() -half+10;
-      var object02 = $('.checkpoint02').offset().top - $(window).scrollTop() -half+10;
-      var object03 = $('.checkpoint03').offset().top - $(window).scrollTop() -half+10;
-      var object04 = $('.checkpoint04').offset().top - $(window).scrollTop() -half+10;
+      var object01 = $('.checkpoint01').offset().top - $(window).scrollTop() -half+0;
+      var object02 = $('.checkpoint02').offset().top - $(window).scrollTop() -half+0;
+      var object03 = $('.checkpoint03').offset().top - $(window).scrollTop() -half+0;
+      var object04 = $('.checkpoint04').offset().top - $(window).scrollTop() -half+0;
+      var object05 = $('.checkpoint05').offset().top - $(window).scrollTop() -half+0;
 
 
       if(!active01 && object01 <= 0 ) {
         blobAnimation01.restart();
-        TweenLite.set('.checkpoint01',{opacity:"0"});
-         TweenLite.set('.checkpoint02',{opacity:"0"});
-          TweenLite.set('.checkpoint03',{opacity:"0"});
-           TweenLite.set('.checkpoint04',{opacity:"0"});
+        TweenLite.set('.checkpoint01',{opacity:"1"});
+  
       }
       else if(object01 > 0 ) {
         blobAnimation01.reverse();
         TweenLite.set('.checkpoint01',{opacity:"0"});
-         TweenLite.set('.checkpoint02',{opacity:"0"});
-          TweenLite.set('.checkpoint03',{opacity:"0"});
-           TweenLite.set('.checkpoint04',{opacity:"0"});
+   
         active01 = false;
       }
 
       if(!active02 && object02 <= 0 ) {
         blobAnimation02.restart();
-        TweenLite.set('.checkpoint02',{opacity:"0"});
-         TweenLite.set('.checkpoint03',{opacity:"0"});
-          TweenLite.set('.checkpoint04',{opacity:"0"});
-           TweenLite.set('.checkpoint01',{opacity:"0"});
+        TweenLite.set('.checkpoint02',{opacity:"1"});
+         
       }
       else if(object02 > 0 ) {
         blobAnimation02.reverse();
         TweenLite.set('.checkpoint02',{opacity:"0"});
-         TweenLite.set('.checkpoint01',{opacity:"0"});
-          TweenLite.set('.checkpoint03',{opacity:"0"});
-           TweenLite.set('.checkpoint04',{opacity:"0"});
+         
         active02 = false;
       }
 
@@ -269,165 +441,20 @@ function stop04 (){
         active04 = false;
       }
 
-    console.log(object01);
+      if(!active05 && object05 <= 0 ) {
+        blobAnimation05.restart();
+        TweenLite.set('.checkpoint05',{opacity:"1"});
+      }
+      else if(object05 > 0 ) {
+        blobAnimation05.reverse();
+        TweenLite.set('.checkpoint05',{opacity:"0"});
+        active05 = false;
+      }
     });
   }
 
   $(document).ready(onResize);
   $(window).resize(onResize);
 
-</script>
-<script type="text/javascript">
-    intitiator = document.getElementById("3");
-    button_2 = document.getElementById("4");
-    modal = document.getElementById("Competitive");
-    brodal = document.getElementById("fun");
-    blob = document.getElementsByClassName("blobsWrapper")[0];
-    main = document.getElementsByClassName("main")[0];
-    close_button = document.getElementsByClassName("Return")[0];
-    button_2.onclick = function(){
-    	brodal.style.opacity = "1";
-    	brodal.style.transition = "1s";
-    	close_button.style.display = "block";
-    	document.documentElement.scrollTop = 0;
-    	document.getElementsByClassName("Return-home")[0].style.display="none";
-    	blob.style.opacity = "0";
-    	main.style.opacity = "0";
-	}
-    intitiator.onclick = function () {
-        modal.style.opacity = "1";
-        modal.style.transition = "1s";
-        close_button.style.display = "block";
-        document.getElementsByClassName("Return-home")[0].style.display="none";
-        document.documentElement.scrollTop =0;
-        blob.style.opacity = "0";
-        main.style.opacity = "0";
-    };
-    close_button.onclick = function () {
-    	modal.style.opacity = "0";
-    	modal.style.transition = "1s";
-    	brodal.style.opacity = "0";
-		close_button.style.display = "none";
-		blob.style.opacity = "1";
-		blob.style.transition = "1s";
-		main.style.opacity = "1";
-		main.style.transition = "1s";
-		document.getElementsByClassName("Return-home")[0].style.display="block";
-		document.getElementById("ie1").style.display="none";
-		document.getElementById("ie2").style.display="none";
-		document.getElementById("ie4").style.display="none";
-		document.getElementById("ie5").style.display="none";
-		document.getElementById("ie3").style.display="none";
-		document.getElementById("ie7").style.display="none";
-		document.getElementById("ie6").style.display="none";
-	}
-</script>
-<script>
-	chemhunt = document.getElementById("spons5");
-	chem_charade = document.getElementById("spons6");
-	sc = document.getElementById("spons7");
-	cqz = document.getElementById("spons8");
-	au = document.getElementById("spons1");
-	i1 = document.getElementById("spons3");
-	cq = document.getElementById("spons4");
-	closer_1 = document.getElementById("mc1");
-	closer_2 = document.getElementById("mc2");
-	closer_3 = document.getElementById("mc3");
-	closer_4 = document.getElementById("mc4");
-	closer_5 = document.getElementById("mc5");
-	closer_6 = document.getElementById("mc6");
-	closer_7 = document.getElementById("mc7");
-	chemhunt.onclick = function () {
-		document.getElementById("ie1").style.display="block";
-		document.documentElement.scrollTop = 0;
-		this.style.pointerEvents = "auto";
-	}
-	chem_charade.onclick = function(){
-		document.getElementById("ie2").style.display="block";
-		document.documentElement.scrollTop = 0;
-	}
-	sc.onclick = function(){
-		document.getElementById("ie3").style.display="block";
-		document.documentElement.scrollTop = 0;
-	}
-	cqz.onclick = function(){
-		document.getElementById("ie4").style.display="block";
-		document.documentElement.scrollTop = 0;
-	}
-	au.onclick = function(){
-		document.getElementById("ie5").style.display="block";
-		document.documentElement.scrollTop = 0;
-	}
-	i1.onclick = function(){
-		document.getElementById("ie6").style.display="block";
-		document.documentElement.scrollTop = 0;
-	}
-	cq.onclick = function(){
-		document.getElementById("ie7").style.display="block";
-		document.documentElement.scrollTop = 0;
-	}
-	closer_1.onclick = function () {
-		document.getElementById("ie1").style.display="none";
-		document.getElementById("ie2").style.display="none";
-		document.getElementById("ie4").style.display="none";
-		document.getElementById("ie5").style.display="none";
-		document.getElementById("ie3").style.display="none";
-		document.getElementById("ie7").style.display="none";
-		document.getElementById("ie6").style.display="none";
-	}
-	closer_2.onclick = function () {
-		document.getElementById("ie1").style.display="none";
-		document.getElementById("ie2").style.display="none";
-		document.getElementById("ie4").style.display="none";
-		document.getElementById("ie5").style.display="none";
-		document.getElementById("ie3").style.display="none";
-		document.getElementById("ie7").style.display="none";
-		document.getElementById("ie6").style.display="none";
-	}
-	closer_3.onclick = function () {
-		document.getElementById("ie1").style.display="none";
-		document.getElementById("ie2").style.display="none";
-		document.getElementById("ie4").style.display="none";
-		document.getElementById("ie5").style.display="none";
-		document.getElementById("ie3").style.display="none";
-		document.getElementById("ie7").style.display="none";
-		document.getElementById("ie6").style.display="none";
-	}
-	closer_4.onclick = function () {
-		document.getElementById("ie1").style.display="none";
-		document.getElementById("ie2").style.display="none";
-		document.getElementById("ie4").style.display="none";
-		document.getElementById("ie5").style.display="none";
-		document.getElementById("ie3").style.display="none";
-		document.getElementById("ie7").style.display="none";
-		document.getElementById("ie6").style.display="none";
-	}
-	closer_5.onclick = function () {
-		document.getElementById("ie1").style.display="none";
-		document.getElementById("ie2").style.display="none";
-		document.getElementById("ie4").style.display="none";
-		document.getElementById("ie5").style.display="none";
-		document.getElementById("ie3").style.display="none";
-		document.getElementById("ie7").style.display="none";
-		document.getElementById("ie6").style.display="none";
-	}
-	closer_6.onclick = function () {
-		document.getElementById("ie1").style.display="none";
-		document.getElementById("ie2").style.display="none";
-		document.getElementById("ie4").style.display="none";
-		document.getElementById("ie5").style.display="none";
-		document.getElementById("ie3").style.display="none";
-		document.getElementById("ie7").style.display="none";
-		document.getElementById("ie6").style.display="none";
-	}
-	closer_7.onclick = function () {
-		document.getElementById("ie1").style.display="none";
-		document.getElementById("ie2").style.display="none";
-		document.getElementById("ie4").style.display="none";
-		document.getElementById("ie5").style.display="none";
-		document.getElementById("ie3").style.display="none";
-		document.getElementById("ie7").style.display="none";
-		document.getElementById("ie6").style.display="none";
-	}
 </script>
 </html>

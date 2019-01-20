@@ -1,0 +1,43 @@
+
+@font-face{
+	font-family:'Bariol';
+	src:url("fonts/Bariol.otf");
+}
+#person{
+	width: 80vw;
+	height: auto;
+    border-radius: 25px;
+    border-style: double;
+    border: crimson;
+    background-color: #282828;
+    color: #37efd7;
+    padding: 2%;
+	
+}
+
+#personname{
+	color: #37efd7;
+	font-size: 2vw;
+	font-family: 'Bariol';
+}
+h1{
+	font-family: 'Bariol';
+	font-size: 2vw;
+
+}
+span{
+	font-size: 1.25vw;
+}
+
+@media screen and (max-width: 600px) {
+h1{
+	font-size: 2.5vh;
+}	
+span{
+		font-size: 1.5vh;
+	}
+	#personname{
+		font-size: 2.2vh;
+	}
+	
+}
