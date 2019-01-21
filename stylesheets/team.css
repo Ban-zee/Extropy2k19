@@ -58,7 +58,7 @@
 	margin-top: 0vh;
 }
 #ani{
-	/*background-image: url("ais.jpg");*/
+background-image: url("./pictures/blank.png");
 }
 #pall{
 background-image: url("./pictures/pall.jpg");
@@ -76,14 +76,18 @@ background-image: url("./pictures/som.jpg");
 	background-image: url("./pictures/punni.jpg");
 }
 #ta{
-
+background-image: url("./pictures/blank.png");
 }
 #debs{
 background-image: url("./pictures/debs.jpg");
 }
-#kanav{
-
+#tnm{
+background-image: url("./pictures/tanmai.jpg");
 }
+#kanav{
+background-image: url("./pictures/blank.png");
+}
+
 .istyle {
 	color: black;
 	margin-top: 5px;
